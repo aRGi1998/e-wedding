@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .image-upload {
+    margin: 20px 0;
+  }
+  
+  .wedding-card {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .wedding-card.Classic {
+    background-color: #b3cde0;
+  }
+  
+  .wedding-card.Modern {
+    background-color: #2e4053;
+  }
+  
+  .wedding-card.Rustic {
+    background-color: #8c8c8c;
+  }
+  
+  .wedding-card.Boho {
+    background-color: #f7cac9;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+  }
+  .wedding-card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-content {
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin: 0 0 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  

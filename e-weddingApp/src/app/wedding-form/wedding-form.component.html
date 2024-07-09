@@ -1,0 +1,85 @@
+<div class="page-background mt-3">
+  <div class="container my-3">
+    <h2>Wedding Card Details</h2>
+    <form [formGroup]="weddingForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Groom's Name</mat-label>
+        <input matInput formControlName="groomName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Bride's Name</mat-label>
+        <input matInput formControlName="brideName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Groom's Father Name</mat-label>
+        <input matInput formControlName="groomFatherName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Groom's Mother Name</mat-label>
+        <input matInput formControlName="groomMotherName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Groom's House Name</mat-label>
+        <input matInput formControlName="groomHouseName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Groom's Place</mat-label>
+        <input matInput formControlName="groomPlaceName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Bride's Father Name</mat-label>
+        <input matInput formControlName="brideFatherName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Bride's Mother Name</mat-label>
+        <input matInput formControlName="brideMotherName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Bride's House Name</mat-label>
+        <input matInput formControlName="brideHouseName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Bride's Place</mat-label>
+        <input matInput formControlName="bridePlaceName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Date and Time</mat-label>
+        <input matInput formControlName="dateTime" type="datetime-local">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Venue</mat-label>
+        <input matInput formControlName="venue">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Google Maps Location</mat-label>
+        <input matInput formControlName="mapLocation">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Theme</mat-label>
+        <mat-select formControlName="theme">
+          <mat-option *ngFor="let theme of themes" [value]="theme">{{ theme }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="image-upload">
+        <input type="file" id="fileInput" (change)="onFileSelected($event)" hidden>
+        <label for="fileInput" class="custom-file-label">Choose Background Image (Optional)</label>
+      </div>
+
+      <button mat-raised-button color="primary" type="submit">Preview</button>
+    </form>
+  </div>
+</div>

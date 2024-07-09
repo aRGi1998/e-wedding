@@ -1,0 +1,49 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #a80b8b);
+}
+
+.invitation-card {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgb(0 0 0);
+  width: 100%;
+  max-width: 500px;
+}
+
+.invitation-card.Classic {
+  background: linear-gradient(to right, #f8f8f8, #e0e0e0);
+}
+
+.invitation-card.Modern {
+  background: linear-gradient(to right, #2b2b2b, #1a1a1a);
+  color: white;
+}
+
+.invitation-card.Rustic {
+  background: linear-gradient(to right, #d7b8a8, #a07858);
+  color: #4a2e1b;
+}
+
+.invitation-card.Boho {
+  background: linear-gradient(to right, #ffd1dc, #ff9a9e);
+  color: #3e2723;
+}
+
+.names {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.heart {
+  font-size: 2em;
+  color: red;
+}
+
+button {
+  margin-top: 20px;
+}

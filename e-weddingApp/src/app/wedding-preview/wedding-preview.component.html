@@ -1,0 +1,17 @@
+<div class="card-container">
+    <div class="invitation-card" [ngClass]="details.theme">
+        <h2>Wedding Invitation</h2>
+        <p>We are thrilled to invite you to the wedding of</p>
+        <p>S/o Mr. {{ details.groomFatherName }} and Mrs. {{ details.groomMotherName }}</p>
+        <p>{{ details.groomHouseName }}</p>
+        <h1 class="names">{{ details.groomName }}</h1>
+        <span class="heart">♥</span>
+        <h1 class="names">{{ details.brideName }}</h1>
+        <p>D/o Mr. {{ details.brideFatherName }} and Mrs. {{ details.brideMotherName }} </p>
+        <p>House: {{ details.brideHouseName }}</p>
+        <p>Date: <strong>{{ formatDate(details.dateTime) }}</strong></p>
+        <p>Venue: <strong>{{ details.venue }}</strong></p>
+        <p><a [href]="getGoogleMapsLink()" target="_blank">View on Google Maps</a></p>
+        <button (click)="downloadTheCard()" mat-raised-button color="primary" type="submit">Download Your Card</button>
+    </div>
+</div>
